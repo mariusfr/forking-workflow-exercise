@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/coderefinery/forking-workflow-exercise.svg?branch=master)](https://travis-ci.org/coderefinery/forking-workflow-exercise/builds)
 
 ## Distributed version control
 
