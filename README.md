@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/coderefinery/forking-workflow-exercise.svg?branch=master)](https://travis-ci.org/coderefinery/forking-workflow-exercise/builds)
 
 ## Distributed version control
 
@@ -19,27 +20,26 @@ First fork this repository on GitHub into your namespace and then clone the fork
 ### Part B: Modify and commit
 
 Before we do any modification, we create a new branch and switch to it - this is a good reflex and a good practice.
-On the new branch add a file `group-X.py` where X is your group number or group name, e.g. `group-17.py`.
+On the new branch add a file `group-X.txt` where X is your group number or group name, e.g. `group-17.txt`.
 **Add only one file per group**.
 (Why? - if you are adventurous, add both a file with the same name to see what happens)
 
 This file should contain a function called `tweet()` which returns
 a string of maximum 280 characters, for instance (don't worry, nothing gets out to Twitter):
 
-```python
-def tweet():
-    return "please replace this boring sentence with something more fun"
+```shell
+please replace this boring sentence with something more fun
 ```
 
-The file `main.py` automatically calls all `tweet()` functions defined in files
-`group*.py`. You do not need to edit `main.py`.
+The file `main.bash` automatically reads all `group-*.txt` files.
+You do not need to edit `main.bash`.
 
 Test it before you commit your change:
 
 ```shell
-$ python main.py
+$ bash main.bash
 
-group 17 says: please replace this boring sentence with something more fun
+group-17 says: please replace this boring sentence with something more fun
 ```
 
 If it works, commit the change.
@@ -70,7 +70,7 @@ Once this is done, practice to update your forked repo with the upstream
 changes and verify that you got the files created by other groups:
 
 ```shell
-$ python main.py
+$ bash main.bash
 ```
 
 Make sure that the contributions from other groups are not only on your local repository
