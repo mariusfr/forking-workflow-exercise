@@ -23,8 +23,7 @@ On the new branch add a file `group-X.txt` where X is your group number or group
 **Add only one file per group**.
 (Why? - if you are adventurous, add both a file with the same name to see what happens)
 
-This file should contain a function called `tweet()` which returns
-a string of maximum 280 characters, for instance (don't worry, nothing gets out to Twitter):
+This file should contain a string of maximum 280 characters, for instance (don't worry, nothing gets out to Twitter):
 
 ```shell
 please replace this boring sentence with something more fun
